@@ -5,7 +5,7 @@ TASK_FAMILY="devops-app-task"
 CLUSTER_NAME="devops-cluster"
 
 # Create a new task definition for this build
-sed -e "s;%BUILD_NUMBER%;${BUILD_NUMBER};g" backend-deployment-config.json > deployment-config-v_${BUILD_NUMBER}.json
+sed -e "s;%BUILD_NUMBER%;${BUILD_NUMBER};g" backend-deployment-config.json > backend-deployment-config-v_${BUILD_NUMBER}.json
 aws ecs register-task-definition --family devops-app-task --cli-input-json file://backend-deployment-config-v_${BUILD_NUMBER}.json --no-paginate
 
 # Update the service with the new task definition and desired count
