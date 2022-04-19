@@ -8,7 +8,7 @@
     ],
     "containerDefinitions": [
       {
-        "name": "devops-app",
+        "name": "devops-app-frontend",
         "image": "ibrolive/devops-demo:react-springboot-image-frontend",
         "cpu": 1024,
         "memory": 2048,
