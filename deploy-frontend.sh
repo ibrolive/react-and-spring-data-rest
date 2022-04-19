@@ -1,6 +1,6 @@
 #!/bin/bash
 export AWS_PAGER="" # disable default aws cli pager
-SERVICE_NAME="devops-service-frontend"
+SERVICE_NAME="devops-service"
 TASK_FAMILY="devops-app-task"
 CLUSTER_NAME="devops-cluster"
 
